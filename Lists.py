@@ -56,3 +56,5 @@ IDEs = ["eclipse","NetBeans","Visual Stutio","PhpStorm","Zend Stutio","PyCharm"]
 IDEs.remove("Zend Stutio")
 IDEs.remove("eclipse")
 print(IDEs)
+# last index
+print(IDEs[-1])
