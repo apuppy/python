@@ -1,0 +1,15 @@
+#!/usr/bin/python
+#!/usr/bin/env python3
+#!-*- coding:utf-8 -*-
+
+single line comment
+#comment one line only
+
+multiple line comment
+'''
+comment line 1
+comment line 2
+comment line x
+'''
+#simple debug trick
+python -m -pdb pythonScript.py
