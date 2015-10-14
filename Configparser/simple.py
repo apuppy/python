@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# _*_ coding:utf-8 _*_
+# -*- coding: utf-8 -*-
 '''更改当前文件夹下sample.ini的内容'''
 import sys,ConfigParser
 cf = ConfigParser.ConfigParser()
