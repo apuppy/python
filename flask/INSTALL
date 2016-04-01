@@ -1,0 +1,10 @@
+安装virtualenv
+	easy_install virtualenv
+在相应目录生成虚拟环境
+	cd flask
+	virtualenv venv --distribute
+激活虚拟环境;在虚拟环境下安装flask
+	. venv/bin/activate
+	python setup.py develop
+在虚拟环境下运行程序(hello.py为调用Flask框架实例化并输出简短信息的程序)
+	python hello.py
