@@ -8,3 +8,14 @@
 	python setup.py develop
 在虚拟环境下运行程序(hello.py为调用Flask框架实例化并输出简短信息的程序)
 	python hello.py
+国内无法访问官方PyPI源时
+    1.一次性生效：
+        easy_install -i http://pypi.douban.com/simple/ virtualenv
+        pip install -i http://pypi.douban.com/simple/ virtualenv
+    2.永久生效（如果配置文件存在修改，不存在则创建）
+        (1).easy_install：在文件~/.pydistutils.cfg 
+            [easy_install]
+            index_url = https://pypi.douban.com/simple/
+        (2).pip:在文件~/.pip/pip.conf
+            [global]
+            index-url = https://pypi.douban.com/simple/
