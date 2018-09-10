@@ -5,7 +5,7 @@ import pymysql.cursors
 # Connect to the database
 connection = pymysql.connect(host='localhost',
                              user='root',
-                             password='222222',
+                             password='123456',
                              db='test',
                              charset='utf8',
                              cursorclass=pymysql.cursors.DictCursor)
@@ -24,3 +24,11 @@ try:
 		print(result)
 finally:
 	connection.close()
+"""
+CREATE TABLE user (
+	id int(11) unsigned not null auto_increment primary key,
+	name varchar(32) not null default '',
+	sex tinyint(1) not null default 0,
+	created_time datetime not null default CURRENT_TIMESTAMP
+)engine = InnoDB default charset = utf8;
+"""
